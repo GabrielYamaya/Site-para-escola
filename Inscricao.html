@@ -4,87 +4,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário de inscrição</title>
+    <title>Formulário de inscrição no curso</title>
 </head>
 
 <body>
-    <form action="/processar-dados" method="get">
-        <div>
-            <label for="nome">Nome do aluno:</label>
-            <input type="text" id="nome" name="aluno_nome" />
-        </div>
-        <div>
-            <label for="estado">Estado do aluno:</label>
-            <input type="text" id="estado" name="aluno_estado" />
-        </div>
-        <div>
-            <label for="cidade">Cidade do aluno:</label>
-            <input type="text" id="cidade" name="aluno_cidade" />
-        </div>
-        <div>
-            <label for="bairro">Bairro do aluno:</label>
-            <input type="text" id="bairro" name="aluno_bairro" />
-        </div>
-        <div>
-            <label for="endereco">Endereço do aluno:</label>
-            <input type="text" id="endereco" name="aluno_endereco" />
-        </div>
-        <div>
-            <label for="numero">Número da casa:</label>
-            <input type="text" id="numero" name="aluno_numero_casa" />
-        </div>
-        <div>
-            <label for="cep">CEP do endereço:</label>
-            <input type="text" id="cep" name="aluno_cep" />
-        </div>
-        <div>
-            <label for="">:</label>
-            <input type="text" id="" name="" />
-        </div>
-        <div>
-            <label for="">:</label>
-            <input type="text" id="" name="" />
-        </div>
-        <div>
-            <label for="">:</label>
-            <input type="text" id="" name="" />
-        </div>
-        <div>
-            <label for="">:</label>
-            <input type="text" id="" name="" />
-        </div>
-        <div>
-            <label for="">:</label>
-            <input type="text" id="" name="" />
-        </div>
-        <div>
-            <label for="">:</label>
-            <input type="text" id="" name="" />
-        </div>
-        <div>
-            <label for="">:</label>
-            <input type="text" id="" name="" />
-        </div>
-        <div>
-            <label for="">:</label>
-            <input type="text" id="" name="" />
-        </div>
-        <div>
-            <label for="">:</label>
-            <input type="text" id="" name="" />
-        </div>
-        <div>
-            <label for="">:</label>
-            <input type="text" id="" name="" />
-        </div>
-        <div>
-            <label for="">:</label>
-            <input type="text" id="" name="" />
-        </div>
-        <div>
-            <label for="">:</label>
-            <input type="text" id="" name="" />
-        </div>
+    <form action="https://660f4d13356b87a55c51227a.mockapi.io/api_escola/v1/usuario" method="post">
+        <fieldset>
+            <legend>Dados do Aluno</legend>
+            <label for="nomeAluno">Nome*:</label><br>
+            <input type="text" id="nomeAluno" name="nomeAluno" required><br>
+
+            <label for="enderecoAluno">Endereço:</label><br>
+            <input type="text" id="enderecoAluno" name="enderecoAluno"><br>
+
+            <label for="bairroAluno">Bairro:</label><br>
+            <input type="text" id="bairroAluno" name="bairroAluno"><br>
+
+            <label for="cidadeAluno">Cidade:</label><br>
+            <input type="text" id="cidadeAluno" name="cidadeAluno"><br>
+
+            <label for="numberAluno">Numero:</label><br>
+            <input type="number" id="numeroAluno" name="numeroAluno"><br>
+
+            <label for="cepAluno">CEP:</label><br>
+            <input type="text" id="cepAluno" name="cepAluno"><br>
+
+            <label for="complementoAluno">Complemento:</label><br>
+            <input type="text" id="complementoAluno" name="complementoAluno"><br>
+
+            <label for="estadoAluno">Estado:</label><br>
+            <input type="text" id="estadoAluno" name="estadoAluno"><br>
+
+            <label for="telefoneAluno">Telefone:</label><br>
+            <input type="text" id="telefoneAluno" name="telefoneAluno"><br>
+
+            <label for="celularAluno">Celular*:</label><br>
+            <input type="text" id="celularAluno" name="celularAluno" required><br>
+
+            <label for="emailAluno">E-mail*:</label><br>
+            <input type="email" id="emailAluno" name="emailAluno" required><br>
+
+            <label for="corAluno">Cor:</label><br>
+            <select id="corAluno" name="corAluno">
+                <option value="branca">Branca</option>
+                <option value="preta">Preta</option>
+                <option value="parda">Parda</option>
+                <option value="amarela">Amarela</option>
+                <option value="indigena">Indígena</option>
+            </select><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Dados do Pai</legend>
+
+            <label for="nomePai">Nome*:</label><br>
+            <input type="text" id="nomePai" name="nomePai" required><br>
+
+            <label for="dataNascimentoPai">Data de Nascimento:</label><br>
+            <input type="date" id="dataNascimentoPai" name="dataNascimentoPai"><br>
+
+            <label for="naturalidadePai">Naturalidade:</label><br>
+            <input type="text" id="naturalidadePai" name="naturalidadePai"><br>
+
+            <label for="instrucaoPai">Instrução:</label><br>
+            <input type="text" id="instrucaoPai" name="instrucaoPai"><br>
+
+            <label for="profissaoPai">Profissão:</label><br>
+            <input type="text" id="profissaoPai" name="profissaoPai"><br>
+
+            <label for="celularPai">Celular*:</label><br>
+            <input type="text" id="celularPai" name="celularPai" required><br>
+
+            <label for="emailPai">E-mail*:</label><br>
+            <input type="email" id="emailPai" name="emailPai" required><br>
+
+            <label for="cpfPai">CPF*:</label><br>
+            <input type="text" id="cpfPai" name="cpfPai" required><br>
+
+            <label for="responsavelFinanceiro">Responsável Financeiro:</label><br>
+            <input type="checkbox" id="responsavelFinanceiro" name="responsavelFinanceiro"><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Dados da Mãe</legend>
+            <label for="nomeMae">Nome*:</label><br>
+            <input type="text" id="nomeMae" name="nomeMae" required><br>
+
+            <label for="dataNascimentoMae">Data de Nascimento*:</label><br>
+            <input type="date" id="dataNascimentoMae" name="dataNascimentoMae" required><br>
+
+            <label for="naturalidadeMae">Naturalidade:</label><br>
+            <input type="text" id="naturalidadeMae" name="naturalidadeMae"><br>
+
+            <label for="instrucaoMae">Instrução:</label><br>
+            <input type="text" id="instrucaoMae" name="instrucaoMae"><br>
+
+            <label for="profissaoMae">Profissão:</label><br>
+            <input type="text" id="profissaoMae" name="profissaoMae"><br>
+
+            <label for="celularMae">Celular*:</label><br>
+            <input type="text" id="celularMae" name="celularMae" required><br>
+
+            <label for="emailMae">E-mail*:</label><br>
+            <input type="email" id="emailMae" name="emailMae" required><br>
+
+            <label for="cpfMae">CPF*:</label><br>
+            <input type="text" id="cpfMae" name="cpfMae" required><br>
+
+            <label for="responsavelFinanceiro">Responsável Financeiro:</label><br>
+            <input type="checkbox" id="responsavelFinanceiroMae" name="responsavelFinanceiro"><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Dados do Curso</legend>
+            <label for="cursoNome">Nome do curso escolhido*:</label><br>
+            <input type="text" id="cursoNome" name="cursoNome" required><br>
+
+            <label for="cursoValor">Valor do curso:</label><br>
+            <input type="text" id="cursoValor" name="cursoValor"><br>
+
+            <label for="cursoDataIngresso">Data de Ingresso:</label><br>
+            <input type="date" id="cursoDataIngresso" name="cursoDataIngresso"><br>
+
+            <label for="cursoParcelas">Parcelas:</label><br>
+            <input type="text" id="cursoParcelas" name="cursoParcelas"><br>
+        </fieldset>
+
+        <button type="submit">Submeter</button>
+    </form>
+
     </form>
 </body>
 
